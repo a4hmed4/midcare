@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Home</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa fa-heartbeat"></i> Medicare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-user-circle-o"></i> My profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="D:\EHR\website\Home\patient's home\patient's home.html"><i
+                class="fa fa-calendar-check-o"></i>preview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-dashboard"></i>Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-cloud-upload"></i>Export</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-phone"></i>Contact Dr</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="D:\EHR\website\log in\login.html"><i class="fa fa-sign-in"></i>Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div style="padding-left:16px">
+    <h3>Hello Ahmed!👋</h3>
+  </div>
+
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-sm-6 p-3">
+        <div class="card">
+          <div class="card-body" style="background-color: rgba(215, 219, 223, 0.452);">
+            <h4 class="card-title">vitals</h4>
+            <p class="card-text">
+            <ul type="disk">
+              <li> Diabetes : 120 ,Status : (Medium)</li>
+              <li> Blood Pressure : 120/80</li>
+              <li>Temperature : 37 C </li>
+              <li> Pulse : 70 beats par min</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="card">
+          <div class="card-body" style="background-color: rgba(215, 219, 223, 0.452);">
+            <h4 class="card-title">Current Medication</h4>
+            <p class="card-text">
+            <ul type="disk">
+              <li>Temodar 250mg <h6>(After breakfast and dinner daily)</h6></li>
+              <li>afinitor 10 mg <h6>(3 times daily)</h6></li>
+              <li>panadol extra <h6>(when it is needed)</h6></li>
+
+            </ul>
+            </p>
+          </div>
+        </div>
+        <br><br>
+        <div class="card" style="background-color: rgba(215, 219, 223, 0.452);">
+          <div class="card-body">
+            <h4 class="card-title"> <a href="#demo" class="btn btn-dark" data-bs-toggle="collapse">Syndrome</a></h4>
+            <p class="card-text">
+            <div id="demo" class="collapse">
+              <ul type="disk">
+                <li>Headache</li>
+                <li>blurred vision</li>
+                <li>fatigue</li>
+                <li>unexplained vomiting</li>
+              </ul>
+            </div>
+            </p>
+
+          </div>
+        </div>
+        <br><br>
+        <div class="card">
+          <div class="card-body" style="background-color: rgba(215, 219, 223, 0.452);">
+            <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+
+            <script>
+              var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+              var yValues = [55, 49, 44, 24, 15];
+              var barColors = [
+                "#b91d47",
+                "#00aba9",
+                "#2b5797",
+                "#e8c3b9",
+                "#1e7145"
+              ];
+
+              new Chart("myChart2", {
+                type: "doughnut",
+                data: {
+                  labels: xValues,
+                  datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                  }]
+                },
+                options: {
+                  title: {
+                    display: true,
+                    text: "World Wide Wine Production 2018"
+                  }
+                }
+              });
+            </script>
+          </div>
+        </div><br><br>
+        
+      </div>
+      <div class="col-sm-6 p-3">
+        <div class="card">
+          <div class="card-body" style="background-color: rgba(215, 219, 223, 0.452);">
+            <h4 class="card-title">Labs Results</h4>
+            <p class="card-text">
+            <ul type="disk">
+              <li><i class="fa fa-file-image-o" aria-hidden="true"></i><a href="img/brain tumer2.jpeg"> X-Ray.jpg </a>   29/6/2022</li>
+              <li><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="img/Comprehensive blood analysis.webp"> Blood analysis.pdf</a> 30/6/2022</li>
+              <li><i class="fa fa-file-image-o" aria-hidden="true"></i><a href="img/Brain-magnetic MRI.png">MRI</a></li>
+            </ul>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="card">
+          <div class="card-body" style="background-color: rgba(215, 219, 223, 0.452);">
+            <h4 class="card-title2"><i class="fa fa-fire fa-fw w3-margin-right"></i>requirements</h4>
+            <p class="card-text">
+              <li> Fall neurological examination (after 2 days)</li>
+              <li> Comprehensive blood analysis </li>
+              <li>MRI</li>
+
+            </p>
+          </div>
+        </div>
+        <br><br>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Diabetes</h4>
+            <p class="card-text">
+              <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+              <script>
+                var xValues = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110];
+
+                new Chart("myChart", {
+                  type: "line",
+                  data: {
+                    labels: xValues,
+                    datasets: [{
+                      data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+                      borderColor: "red",
+                      fill: false
+                    }, {
+                      data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+                      borderColor: "green",
+                      fill: false
+                    }, {
+                      data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+                      borderColor: "blue",
+                      fill: false
+                    }]
+                  },
+                  options: {
+                    legend: { display: false }
+                  }
+                });
+              </script>
+            </p>
+
+          </div>
+        </div>
+        <br><br>
+        <div class="card">
+          <div class="card-body" style="background-color: rgba(215, 219, 223, 0.452);">
+            <canvas id="myChart3" style="width:100%;max-width:600px"></canvas>
+
+            <script>
+              var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+              var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+              new Chart("myChart3", {
+                type: "line",
+                data: {
+                  labels: xValues,
+                  datasets: [{
+                    fill: false,
+                    lineTension: 0,
+                    backgroundColor: "rgba(0,0,255,1.0)",
+                    borderColor: "rgba(0,0,255,0.1)",
+                    data: yValues
+                  }]
+                },
+                options: {
+                  legend: { display: false },
+                  scales: {
+                    yAxes: [{ ticks: { min: 6, max: 16 } }],
+                  }
+                }
+              });
+            </script>
+          </div>
+        </div>
+        <br><br>
+
+      
+
+      <br><br>
+      <div class="card">
+        <div class="card-body" style="background-color: rgba(215, 219, 223, 0.452);">
+            <h4 class="card-title">Timeline</h4>
+            <p class="card-text">
+            <div class="timeline-area">
+                <div class="container2">
+                    <div class="timelines">
+                        
+                    </div>
+                    <div class="all-timelines">
+                        <!--SINGLE TIMELINE-->
+                        <section class="one">
+                            <div class="single-timeline d-flex-2">
+                                <div class="timeline-blank"></div>
+                                <div class="timeline-text d-flex-2">
+                                    <span>
+                                        <h6>April 2019</h6> — The launch of Aryacoin; AYA ICO, resulting in
+                                        over 30BTC collected
+                                    </span>
+                                    <div class="t-square"></div>
+                                </div>
+                            </div>
+
+                            <!--SINGLE TIMELINE-->
+
+                            <div class="single-timeline d-flex-2">
+                                <div class="timeline-blank"></div>
+                                <div class="timeline-text d-flex-2">
+                                    <span>
+                                        <h6>December 2019 </h6>— The launch of AYA Pay
+                                    </span>
+                                    <div class="t-square"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--SINGLE TIMELINE-->
+                        <section class="two">
+                            <div class="single-timeline d-flex-2">
+                                <div class="timeline-blank"></div>
+                                <div class="timeline-text d-flex-2">
+                                    <span>
+                                        <h6>April 2020</h6> — The successful Hamedan Hardfork, supported by
+                                        all
+                                        AYA exchanges, aimed at integrating the dPoW algorithm, improving
+                                        the
+                                        security of the AYA blockchain.
+                                    </span>
+                                    <div class="t-square"></div>
+                                </div>
+                            </div>
+
+                            <!--SINGLE TIMELINE-->
+
+                            <div class="single-timeline d-flex-2">
+                                <div class="timeline-blank"></div>
+                                <div class="timeline-text d-flex-2">
+                                    <span>
+                                        <h6>June 2020</h6> — Aryna Exchange goes live, opening more trading
+                                        opportunities globally
+                                    </span>
+                                    <div class="t-square"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--SINGLE TIMELINE-->
+                        <section class="three">
+                            <div class="single-timeline d-flex-2">
+                                <div class="timeline-blank"></div>
+                                <div class="timeline-text d-flex-2">
+                                    <span>
+                                        <h6>July 2020</h6> — The enabling of our Coin Exchanger
+                                    </span>
+                                    <div class="t-square"></div>
+                                </div>
+                            </div>
+                            <!--SINGLE TIMELINE-->
+                            <div class="single-timeline d-flex-2">
+                                <div class="timeline-blank"></div>
+                                <div class="timeline-text d-flex-2">
+                                    <span>
+                                        <h6>November 2020</h6> — The implementation of Smart Contracts into
+                                        the
+                                        Aryacoin Ecosystem
+                                    </span>
+                                    <div class="t-square"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--SINGLE TIMELINE-->
+                        <section class="four">
+                            <div class="single-timeline d-flex-2">
+                                <div class="timeline-blank"></div>
+                                <div class="timeline-text d-flex-2">
+                                    <span>
+                                        <h6>Q1 2021</h6> — Alef B goes live (more details coming soon)
+                                    </span>
+                                    <div class="t-square"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+
+    </div>
+  </div>
+    </div>
+  </div>
+</body>
+
+</html>

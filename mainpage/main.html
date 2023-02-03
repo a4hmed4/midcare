@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a class="navbar-brand"> <i class="fa fa-heartbeat"></i>Medicare</a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#Home">HOME</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#profile">profiles</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box" id="Home">
+            <h1>Healthcare the way you deserve it.</h1>
+            <p>Say goodbye to complicated, exaggerated and confusing healthcare.<br>In everything from daily care to
+                urgent medical problems to the management of chronic conditions.</p>
+            <a href="../log in/login.html" class="hero-btn">LOGIN To your EHR</a>
+        </div>
+    </section><br>
+
+    <!-- About -->
+
+    <section class="About" id="About">
+        <div class="row2">
+            <div class="column2">
+              <div class="card2">
+                <h3>Unlimited messaging with your<br>
+                    dedicated healthcare team.</h3>
+                <p>Your dedicated medical team is standing by<br>
+                    to address your healthcare needs and questions,<br>
+                    no matter how big or small.</p>
+              </div>
+            </div>
+          
+            <div class="column2">
+              <div class="card2">
+                <h3>Discounted access to all of your<br>
+                    prescription medications.</h3>
+                <p>Manage all your prescription medications<br>
+                    from our simplified ePharmacy platform.</p>
+              </div>
+            </div>
+            
+            <div class="column2">
+              <div class="card2">
+                <h3>Manage all your prescription medications<br>
+                    from our simplified ePharmacy platform.</h3>
+                <p>Schedule an appointment with your<br>
+                    doctor anytime for any of your primary,<br>
+                    urgent or chronic care needs.</p>
+              </div>
+            </div>
+            
+          </div>
+
+    </section><br>
+    <!--profile-->
+    <section id="profile">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width:600px">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                                <h4 class="card-title">Dr.Ahmed Elsayed</h4>
+                                <p class="card-text">Neurosurgery consultant
+                                </p>
+                                <a href="D:\EHR\website\dr home\profile\profile.html" class="btn btn-group">See
+                                    Profile</a>
+                            </div>
+
+
+                            <div class="col-lg-4">
+                                <img src="photos/sneed.jpeg" style="width:130px;height:140px; " alt="Avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width:600px">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                                <h4 class="card-title">Dr.Ahmed Ali</h4>
+                                <p class="card-text">Neurosurgery consultant
+                                </p>
+                                <a href="D:\EHR\website\dr home\profile\profile.html" class="btn btn-group">See
+                                    Profile</a>
+                            </div>
+
+
+                            <div class="col-lg-4">
+                                <img src="photos/download (1).jfif" style="width:130px;height:140px; " alt="Avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+    <!--news-->
+
+    <section id="news">
+        news
+    </section>
+
+
+    <!--contact -->
+    <section id="contact">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+                <div class="container" >
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email..">
+
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:100px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                
+            </div>
+            <div class="col"></div>
+
+        </div>
+    </section><br>
+
+
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4></h4>
+                    <i class="fa fa-heartbeat"></i> Medicare</a>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>ABOUT US</h4>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Our Vision</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Our Core Values</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>MEDICAL PROVIDERS</h4>
+                    <ul>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">Hospitals</a></li>
+                        <li><a href="#">Clinics</a></li>
+                        <li><a href="#">Pharmacies</a></li>
+                        <li><a href="#">Clinical Laboratory</a></li>
+                        <li><a href="#">Radiology</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>RESOURCES</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQS</a></li>
+                        <li><a href="#">BRECELET</a></li>
+                        <li><a href="#">SUPPORT</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>APPS</h4>
+                    <ul>
+                        <!-- <li><a href='https://play.google.com/store/games?utm_source=emea_Med&utm_medium=hasem&utm_content=Sep2020&utm_campaign=Evergreen&pcampaignid=MKT-EDR-emea-eg-1001280-Med-hasem-py-Evergreen-Sep2020-Text_Search_BKWS%7CONSEM_kwid_43700010914708337&referrer=gclid%3DCj0KCQjwzqSWBhDPARIsAK38LY_kdyt9Z5M2Fhvr5t5CHeSoBBu5Cy5gypRN--YZsD4P_Jv6ukyAMw4aAhwvEALw_wcB&gref=EkUKPQoJCPDOpJYGEM8BEiwArfwtj-R3K31nkzYWG-vm3kId5KgEG7kLLmDKlE375hmwPg_8m_q6TIAzDhoCHC8QAvD_BwEY4_bcmgM&gclid=Cj0KCQjwzqSWBhDPARIsAK38LY_kdyt9Z5M2Fhvr5t5CHeSoBBu5Cy5gypRN--YZsD4P_Jv6ukyAMw4aAhwvEALw_wcB&gclsrc=aw.ds&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a> </li> -->
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <h5>Copyright © 2022 | MEDICARE™</h5>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!--js for toggle menu-->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
