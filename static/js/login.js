@@ -73,13 +73,13 @@ function check() {
   if (username == "" || pass == "") {
     alert("please check if your user name & password is true or not ")
   }
-  else if (patain_.email.some((x) => x == username) && patain_.pass.some((x) => pass == x)) {
+  else if (patain_.email.some((x) => x == username) || patain_.username.some((x) => x == username)&& patain_.pass.some((x) => pass == x)) {
     window.close()
     window.open("../../website/Home/profile/profile.html");
   }
-  else if (doctor_.email.some((x) => x == username) && doctor_.pass.some((x) => pass == x)) {
+  else if (doctor_.email.some((x) => x == username)||doctor_.username.some((x) => x == username) && doctor_.pass.some((x) => pass == x)) {
     window.close()
-    window.open("../../website/dr home/profile/profile.html");
+    window.open("../../website/drhome/profile/profile.html");
   }
   else {
     alert("please check if your user name & password is true or not ")
