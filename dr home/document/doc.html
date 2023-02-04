@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/dr_doc.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet"
@@ -22,7 +21,7 @@
 <body>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../../main page/main.html"><i class="fa fa-heartbeat"></i> Medicare</a>
+            <a class="navbar-brand" href="../../mainpage/index.html"><i class="fa fa-heartbeat"></i> Medicare</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -138,13 +137,7 @@
                             <td style="text-align: right;">
                                 <div class="action-round-btns-wrp">
                                     <div class="popover-menu-trigger-elm-wrp"><span class=" -text-wrp"><button
-                                                type="button" class="btn-sm-round btn btn-primary"><svg width="16"
-                                                    height="4" viewBox="0 0 16 4" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M9.68421 1.68421C9.68421 2.61579 8.93158 3.36842 8 3.36842C7.06842 3.36842 6.31579 2.61579 6.31579 1.68421C6.31579 0.752631 7.06842 0 8 0C8.93158 0 9.68421 0.752631 9.68421 1.68421ZM14.3158 0C13.3842 0 12.6316 0.752631 12.6316 1.68421C12.6316 2.61579 13.3842 3.36842 14.3158 3.36842C15.2474 3.36842 16 2.61579 16 1.68421C16 0.752631 15.2474 0 14.3158 0ZM1.68421 0C0.752632 0 0 0.752631 0 1.68421C0 2.61579 0.752632 3.36842 1.68421 3.36842C2.61579 3.36842 3.36842 2.61579 3.36842 1.68421C3.36842 0.752631 2.61579 0 1.68421 0Z"
-                                                        fill="#212529"></path>
-                                                </svg></button></span></div>
+                                                type="button" class="btn-sm-round btn btn-primary" onclick="View()">View</button></span></div>
                                 </div>
                             </td>
                         </tr>
@@ -153,6 +146,12 @@
             </div>
         </div>
     </div>
+    <script>
+        function View(){
+            window.close
+            window.open("../../dr home/preview/patient.html")
+        }
+    </script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
 
 body {
     font-family: sans-serif;
-    background-image: url(AM.jpeg);
+    background-image: url(../image/AM.jpeg);
     background-repeat: no-repeat;
     overflow: hidden;
     background-size: cover;
