@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
-        <link rel="icon" href="../../static/image/heartbeat.png" type="image/x-icon">
+    <link rel="icon" href="../../static/image/heartbeat.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <meta charset="UTF-8">
@@ -23,38 +23,39 @@
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="../../index.html"><i class="fa fa-heartbeat"></i> Medicare</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="../profile/profile.html"><i class="fa fa-user-circle-o"></i> My profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../dr'shome/tem.html"><i
-                    class="fa fa-home"></i>Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../dashboard/dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../document/doc.html"><i class="fa fa-book"></i>Document</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../contactme/chat.html"><i class="fa fa-phone"></i>Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../login/login.html"><i class="fa fa-sign-in"></i>Logout</a>
-              </li>
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../profile/profile.html"><i class="fa fa-user-circle-o"></i> My
+                            profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../dr'shome/tem.html"><i class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../dashboard/dashboard.html"><i
+                                class="fa fa-dashboard"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../document/doc.html"><i class="fa fa-book"></i>Document</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contactme/chat.html"><i class="fa fa-phone"></i>Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../login/login.html"><i class="fa fa-sign-in"></i>Logout</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     <div class="row" style="padding:20px ;padding-top: 50px ;">
         <div class="col-md-12">
             <div class="usage-table-wrapper rounded-table-wrapper">
-                <table class="rounded-table table table-hover">
+                <table class="rounded-table table table-hover col-sm-12 p-3 content-table">
                     <thead>
                         <tr>
                             <th class="TableHeaderCell_table_header_cell__Tz_cM first-tablemobile">
@@ -136,8 +137,12 @@
                             <td class="-tablemobile">8.61 kB</td>
                             <td style="text-align: right;">
                                 <div class="action-round-btns-wrp">
-                                    <div class="popover-menu-trigger-elm-wrp"><span class=" -text-wrp"><button
-                                                type="button" class="btn-sm-round btn btn-primary" onclick="View()">View</button></span></div>
+                                    <div class="popover-menu-trigger-elm-wrp" style="padding: 10px;"><span class=" -text-wrp"><button
+                                                type="button" class="btn-sm-round btn btn-primary"
+                                                onclick="View()">View</button></span></div>
+                                    <div class="popover-menu-trigger-elm-wrp" style="padding: 10px;"><span class=" -text-wrp"><button
+                                                type="button" class="btn-sm-round btn btn-primary"
+                                                onclick="Result()">Result</button></span></div>
                                 </div>
                             </td>
                         </tr>
@@ -147,9 +152,11 @@
         </div>
     </div>
     <script>
-        function View(){
-            window.close
-            window.open("../preview/patient.html")
+        function View() {
+            window.location.href="../preview/patient.html"
+        }
+        function Result() {
+            window.location.href ="../../predict.html"
         }
     </script>
 </body>

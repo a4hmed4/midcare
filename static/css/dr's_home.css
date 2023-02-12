@@ -1,43 +1,50 @@
 body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
-    background: linear-gradient(to bottom, #f9fbfc 0%, #79b1fc 100%)
-  }
-  
-  h4 {
-    color: rgb(2, 77, 77);
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: rgb(173, 172, 171);
-  }
-  
-  h3 {
-    color: rgba(3, 44, 97, 0.685);
-    font-family: inside;
-    font-style: oblique;
-    cursor: default;
-  }
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+  background: linear-gradient(to bottom, #f9fbfc 0%, #79b1fc 100%)
+}
 
-  img {
-    border-radius: 50%;
-  }
-  
-  .card {
-    background-color: rgba(215, 234, 250, 0.486);
-    opacity: 0.5;
-    border: 2px solid  rgba(0, 119, 255, 0.753)ed;
-    border-radius: 22px;
-    padding: 5px;
-    
-  }
+h4 {
+  color: rgb(2, 77, 77);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(173, 172, 171);
+}
 
+h3 {
+  color: rgba(3, 44, 97, 0.685);
+  font-family: inside;
+  font-style: oblique;
+  cursor: default;
+}
 
+img {
+  border-radius: 50%;
+}
 
+.card {
+  min-width: 100px;
+  background-color: rgba(215, 234, 250, 0.486);
+  opacity: 0.5;
+  border: 2px solid rgba(0, 119, 255, 0.753)ed;
+  border-radius: 22px;
+  padding: 5px;
+  min-height: 250px;
 
-  .card:hover {
+}
+
+.card:hover {
   opacity: 1.0;
   border: 2px solid rgba(0, 119, 255, 0.753);
   border-radius: 22px;
   padding: 5px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+ 
 }

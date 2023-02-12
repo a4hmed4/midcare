@@ -27,11 +27,11 @@ class doctor {
   }
 }
 
-let patain_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr6303302@gmail.com", username: "AbuHamida" },
+let patain_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr6303302@gmail.com", username: "midcare_patient" },
 { name: "Ahmed Sneed", pass: "123456", email: "mr6303302@gmail.com", username: "AbuHamida" },
 { name: "Rowyda AbdElrehem", pass: "123456", email: "mr6303302@gmail.com", username: "AbuHamida" }]
 
-let doctor_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr8233651@gmail.com", username: "AbuHamida" },
+let doctor_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr8233651@gmail.com", username: "midcare_doctor" },
 { name: "Ahmed Sneed", pass: "123456", email: "mr8233651@gmail.com", username: "AbuHamida" },
 { name: "Rowyda AbdElrehem", pass: "123456", email: "mr8233651@gmail.com", username: "AbuHamida" }]
 
@@ -74,12 +74,10 @@ function check() {
     alert("please check if your user name & password is true or not ")
   }
   else if (patain_.email.some((x) => x == username) || patain_.username.some((x) => x == username)&& patain_.pass.some((x) => pass == x)) {
-    window.close()
-    window.open("../Home/profile/profile.html");
+    window.location.href = "../Home/profile/profile.html";
   }
   else if (doctor_.email.some((x) => x == username)||doctor_.username.some((x) => x == username) && doctor_.pass.some((x) => pass == x)) {
-    window.close()
-    window.open("../drhome/profile/profile.html");
+    window.location.href = "../drhome/profile/profile.html";
   }
   else {
     alert("please check if your user name & password is true or not ")
