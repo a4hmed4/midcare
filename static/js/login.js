@@ -31,13 +31,7 @@ let patain_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr6303302@
 { name: "Ahmed Sneed", pass: "123456", email: "mr6303302@gmail.com", username: "AbuHamida" },
 { name: "Rowyda AbdElrehem", pass: "123456", email: "mr6303302@gmail.com", username: "AbuHamida" }]
 
-<<<<<<< HEAD
-let doctor_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr8233651@gmail.com", username: "midcare_patient" },
-=======
-
-
 let doctor_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr8233651@gmail.com", username: "midcare_doctor" },
->>>>>>> 93fd723eaeb9b56c7c64750a65f43878023fdedd
 { name: "Ahmed Sneed", pass: "123456", email: "mr8233651@gmail.com", username: "AbuHamida" },
 { name: "Rowyda AbdElrehem", pass: "123456", email: "mr8233651@gmail.com", username: "AbuHamida" }]
 
