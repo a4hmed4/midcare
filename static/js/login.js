@@ -27,11 +27,11 @@ class doctor {
   }
 }
 
-let patain_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr6303302@gmail.com", username: "AbuHamida" },
+let patain_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr6303302@gmail.com", username: "midcare_doctor" },
 { name: "Ahmed Sneed", pass: "123456", email: "mr6303302@gmail.com", username: "AbuHamida" },
 { name: "Rowyda AbdElrehem", pass: "123456", email: "mr6303302@gmail.com", username: "AbuHamida" }]
 
-let doctor_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr8233651@gmail.com", username: "AbuHamida" },
+let doctor_info = [{ name: "Mohamed Ramadan", pass: "123456", email: "mr8233651@gmail.com", username: "midcare_patient" },
 { name: "Ahmed Sneed", pass: "123456", email: "mr8233651@gmail.com", username: "AbuHamida" },
 { name: "Rowyda AbdElrehem", pass: "123456", email: "mr8233651@gmail.com", username: "AbuHamida" }]
 
