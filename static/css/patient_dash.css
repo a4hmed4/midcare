@@ -1,107 +1,171 @@
 body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
-  }
-  
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
 h4 {
-    color: rgb(2, 77, 77);
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: rgb(173, 172, 171);
-  }
-  
-  h3 {
-    color: rgba(3, 44, 97, 0.685);
-    font-family: inside;
-    font-style: oblique;
-    cursor: default;
-  }
+  color: rgb(2, 77, 77);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(173, 172, 171);
+}
+
+h3 {
+  color: rgba(3, 44, 97, 0.685);
+  font-family: inside;
+  font-style: oblique;
+  cursor: default;
+}
 
 
-  input, select{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 4px 0;
-    box-sizing: border-box;
-    border: none;
-    background-color: rgb(223, 219, 219);
-    border-bottom: 2px solid rgb(71, 69, 69);
-  }
+.but {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-  .radio {
-    display: inline-flex;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  }
+button {
+  border: none;
+  background: none;
+}
 
-  .radio--input {
-    display: none;
-  }
+.btn-three {
+  /* color: #fff; */
+  transition: all 0.5s;
+  position: relative;
+}
 
-  .radio--label {
-    padding: 8px 14px;
-    font-size: 14px;
-    font-family: sans-serif;
-    color: #ffffff;
-    background: #009578;
-    cursor: pointer;
-    transition: background 0.1s;
-  }
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #04aa6da3;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
 
-  .radio--label:not(:last-of-type){
-    border-right: 1px solid #006856;
-  }
+.btn-three:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
 
-  .radio--input:checked + .radio--label{
-    background: #006856;
-  }
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  color: #04aa6da3;
+  border: 1px solid rgba(6, 12, 18, 0.5);
+  border-radius: 5px;
+  transform: scale(1.2, 1.2);
+}
+
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgb(223, 219, 219);
+  border-bottom: 2px solid rgb(71, 69, 69);
+}
+
+.radio {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.radio--input {
+  display: none;
+}
+
+.radio--label {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #ffffff;
+  background: #009578;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.radio--label:not(:last-of-type) {
+  border-right: 1px solid #006856;
+}
+
+.radio--input:checked+.radio--label {
+  background: #006856;
+}
 
 
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
   input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
+    width: 100%;
+    margin-top: 0;
   }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
+}
