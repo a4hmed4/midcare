@@ -13,8 +13,8 @@ fetch(API).then((res) => {
     data.feeds.map((ele) => {
       // ele => (element) => each feed of data
       table.innerHTML += `<tr>
-      <td data-title="Provider Name">${ele.field1}</td>
-      <td data-title="E-mail">${ele.field2}</td>
+      <td data-title>${ele.field1}</td>
+      <td data-title>${ele.field2}</td>
     </tr>`;
     });
   });
