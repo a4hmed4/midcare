@@ -4,7 +4,7 @@
         <title></title>
         <link rel="stylesheet" type="text/css" href="../static/css/log_style.css">
         <link rel="icon" href="../static/image/heartbeat.png" type="image/x-icon">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div id="container" class="container">
@@ -52,17 +52,21 @@
                         <div class="form sign-in">
                             <div class="input-group">
                                 <i class='bx bxs-user'></i>
-                                <input id="username" type="text" placeholder="Username">
+                                <input id="username" type="text" placeholder="Username" required>
                             </div>
                             <div class="input-group">
                                 <i class='bx bxs-lock-alt'></i>
-                                <input id="password" type="password" placeholder="Password">
+                                <input id="password" type="password" placeholder="Password" required>
+                            </div>
+                            <div class="row-3 check" id="check">
+                                <i class="fa fa-exclamation-triangle col-3" aria-hidden="true"></i>
+                                <h3 class="col-3"> username or password is not correct</h3>
                             </div>
                             <button onclick="check()">
                                 Sign in
                             </button>
                             <p>
-                                <b>
+                                <b onclick="toggle()" class="pointer">
                                     Forgot password?
                                 </b>
                             </p>
