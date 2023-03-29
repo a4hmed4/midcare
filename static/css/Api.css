@@ -203,6 +203,8 @@ a:focus {
     
     .navbar .navbar-brand {
         color: #000000;
+        font-size: 35px;
+
     }
     
     .navbar .navbar-nav {
