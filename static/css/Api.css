@@ -774,20 +774,13 @@ tr:nth-child(even) {
 	flex: unset;
 }
 
-.table-custom-width td:nth-child(1),
-.table-custom-width th:nth-child(1) {
-	width: 10%;
-}
 
 .table-custom-width td:nth-child(2),
 .table-custom-width th:nth-child(2) {
 	flex: unset;
 }
 
-.table-custom-width td:nth-child(2),
-.table-custom-width th:nth-child(2) {
-	width: 15%;
-}
+
 
 
 /*******************************/
